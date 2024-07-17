@@ -3,43 +3,54 @@
 int main()
 {
     int x,y,z,k,n;
+
     printf("Enter the value of x:");
     scanf("%d",&x);
     printf("Enter the value of y:");
     scanf("%d",&y);
     printf("Enter the value of z:");
     scanf("%d",&z);
-    printf("Enter the value of n:");
-    scanf("%d",&n);
+    while(1)
+    {
+
+
+         printf("Enter the value of n:");
+         scanf("%d",&n);
+
     switch (n)
     {
           case 1:
             k = x+y*z/4%2-1;
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           case 2:
             k = x%y+z*z;
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           case 3:
             k = x*x-y/z;
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           case 4:
             k = x+y/z-y;
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           case 5:
             k = x+y-(x==y);
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           case 6:
             k= x+y-(x=y);
-            printf("k=%d",k);
+            printf("k=%d\n",k);
             break;
           default:
             printf("enter wrong input");
+            goto ss;
+
 
     }
+    }
+    ss:
     return 0;
+
 }
